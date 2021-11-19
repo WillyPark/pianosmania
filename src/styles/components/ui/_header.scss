@@ -1,0 +1,86 @@
+.header--site{
+    height: 100vh;
+    // background-image: url(./../../../assets/piano3.jpg);
+    background-image: url(./../../../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: 75%;
+    background-position: 70%;
+    filter: contrast(1.3);
+    color: $blanco;
+}
+
+@media(min-width: 768px){
+    .header--site{
+        // background-position: 100% 95%;
+        background-position: center;
+    }
+}
+
+.header__menu{
+    display: grid;
+    height: 100%;
+
+    grid-template-rows: 1fr 4fr;
+
+    .header__menu--logo{
+        font-size: 2.2rem;
+        text-align: center;
+        padding-top: 1rem;
+        font-family: $fuente-principal;
+
+        span{
+            color: $rojo;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    @media(min-width: 768px){
+        .header__menu--logo{
+            font-size: 3.5rem;
+            grid-row: 2;
+            text-align: left;
+            // margin-top: 4rem;
+
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.header__menuRedes--contenedor{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .header__menuRedes{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+
+        i{
+            color: $blanco;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            transition: color .3s ease;
+
+            &:hover{
+                color: $rojo;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .header__menuRedes--contenedor{
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+}

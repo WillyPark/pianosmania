@@ -1,0 +1,15 @@
+.site--footer{
+    background-color: $fondo-negro;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: $blanco;
+    font-size: 1rem;
+    font-family: $fuente-principal;
+}
+
+@media(min-width: 768px){
+    .site--footer{
+        font-size: 1.3rem;
+    }
+}
