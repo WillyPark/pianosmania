@@ -16,7 +16,7 @@ export const VideoScreen = () => {
         navigate("/");
     }
 
-    const loading = () => {
+    const loader = () => {
         document.querySelector(".loading").remove();
     }
 
@@ -30,13 +30,13 @@ export const VideoScreen = () => {
             <div className="video__contenedor">
                 <div className="loading" />
 
-                <iframe 
-                    onLoad={ loading } 
-                    title={ video.nombreURL } 
-                    src={ video.url } 
-                    frameBorder="0" 
-                    scrolling="no" 
-                    allowFullScreen 
+                <iframe
+                    onLoad={ loader }
+                    title={ video.nombreURL }
+                    src={ video.url }
+                    frameBorder="0"
+                    scrolling="no"
+                    allowFullScreen
                     referrerPolicy="strict-origin"
                     allow="autoplay"
                 />
