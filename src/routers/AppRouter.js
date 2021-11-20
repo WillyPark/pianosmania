@@ -9,12 +9,10 @@ export const AppRouter = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <div className="animacionFade">
-                        <Route path="/" element={ <PublicRouter /> } >
-                            <Route path="" element={ <VideosCarrousel /> } />
-                            <Route path=":nombreURL" element={ <VideoScreen /> } />
-                        </Route>
-                    </div>
+                    <Route path="/" element={ <PublicRouter /> } >
+                        <Route path="" element={ <VideosCarrousel /> } />
+                        <Route path=":nombreURL" element={ <VideoScreen /> } />
+                    </Route>
 
                     <Route path="/404-page" element={ <Page404 /> } />
                 </Routes>
