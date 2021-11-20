@@ -9,7 +9,7 @@ export const VideoScreen = () => {
     const video = data.find( dato => ( dato.nombreURL === nombreURL ));
 
     if ( !video ) {
-        return <Navigate to="/" />;
+        return <Navigate to="/404-page" />;
     }
 
     const handleBack = () => {
