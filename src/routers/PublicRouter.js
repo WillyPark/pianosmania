@@ -8,7 +8,9 @@ export const PublicRouter = () => {
        <> 
             <Header />
 
-                <Outlet className="animacionFade" />
+                <div className="animacionFade">
+                    <Outlet />
+                </div>
 
             <Footer />
         </>
