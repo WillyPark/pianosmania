@@ -8,18 +8,18 @@ import ReactGa from 'react-ga';
 
 export const AppRouter = () => {
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        ReactGa.initialize("G-GDQJJ5NQQE");
-        ReactGa.pageview( window.location.pathname + window.location.search );
+    //     ReactGa.initialize("G-GDQJJ5NQQE");
+    //     ReactGa.pageview( window.location.pathname + window.location.search );
 
-    }, []);
+    // }, []);
 
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={ <PublicRouter /> } className="animacionFade">
+                    <Route path="/" element={ <PublicRouter /> } >
                         <Route path="/" element={ <VideosCarrousel /> } />
                         <Route path="/:nombreURL" element={ <VideoScreen /> } />
                     </Route>

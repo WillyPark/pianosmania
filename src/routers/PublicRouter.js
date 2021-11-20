@@ -5,12 +5,12 @@ import { Outlet } from 'react-router-dom';
 
 export const PublicRouter = () => {
     return (
-       <> 
+       <div className="animacionFade"> 
             <Header />
 
                 <Outlet />
 
             <Footer />
-        </>
+        </div>
     )
 }
