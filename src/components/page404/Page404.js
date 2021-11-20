@@ -1,6 +1,6 @@
 export const Page404 = () => {
     return (
-        <div className="page404">
+        <div className="page404 animacionFade">
             <h2 className="page404__title">Página No Encontrada</h2>
             <div className="cube">
                 <div className="top"></div>

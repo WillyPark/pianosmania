@@ -6,7 +6,7 @@ import { Page404 } from '../components/page404/Page404';
 
 export const AppRouter = () => {
     return (
-        <div>
+        <>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <PublicRouter /> } >
@@ -17,6 +17,6 @@ export const AppRouter = () => {
                     <Route path="/404-page" element={ <Page404 /> } />
                 </Routes>
             </BrowserRouter>
-        </div>
+        </>
     )
 }
