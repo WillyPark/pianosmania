@@ -19,7 +19,7 @@ export const AppRouter = () => {
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={ <PublicRouter /> } >
+                    <Route path="/" element={ <PublicRouter /> } className="animacionFade">
                         <Route path="/" element={ <VideosCarrousel /> } />
                         <Route path="/:nombreURL" element={ <VideoScreen /> } />
                     </Route>
