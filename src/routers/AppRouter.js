@@ -1,22 +1,29 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Page404 } from '../components/page404/Page404';
 import { VideosCarrousel } from '../components/video/VideosCarrousel';
 import { VideoScreen } from '../components/video/VideoScreen';
-import { PublicRouter } from './PublicRouter';
+// import { PublicRouter } from './PublicRouter';
+// import { Page404 } from '../components/page404/Page404';
+
+import { Footer } from '../components/ui/Footer';
+import { Header } from '../components/ui/Header';
 
 export const AppRouter = () => {
     return (
-        <div className="animacionFade">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={ <PublicRouter /> } >
+                    <Header />
+                        <Route path="/" element={ <VideosCarrousel /> } />
+                        <Route path="/:nombreURL" element={ <VideoScreen /> } />
+                    <Footer />
+
+
+                    {/* <Route path="/" element={ <PublicRouter /> } >
                         <Route path="" element={ <VideosCarrousel /> } />
                         <Route path=":nombreURL" element={ <VideoScreen /> } />
                     </Route>
 
-                    <Route path="/404-page" element={ <Page404 /> } />
+                    <Route path="/404-page" element={ <Page404 /> } /> */}
                 </Routes>
             </BrowserRouter>
-        </div>
     )
 }
