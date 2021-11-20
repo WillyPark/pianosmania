@@ -1,7 +1,9 @@
 import { AppRouter } from "./routers/AppRouter";
 
 export const Pianosmania = () => {
-    return (
-        <AppRouter />
+    return ( 
+        <div className="animacionFade">
+            <AppRouter />
+        </div>
     )
 }
