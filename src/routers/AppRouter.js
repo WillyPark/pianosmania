@@ -6,7 +6,7 @@ import { PublicRouter } from './PublicRouter';
 
 export const AppRouter = () => {
     return (
-        <>
+        <div className="animacionFade">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={ <PublicRouter /> } >
@@ -17,6 +17,6 @@ export const AppRouter = () => {
                     <Route path="/404-page" element={ <Page404 /> } />
                 </Routes>
             </BrowserRouter>
-        </>
+        </div>
     )
 }
