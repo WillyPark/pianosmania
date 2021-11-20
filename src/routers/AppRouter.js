@@ -9,12 +9,17 @@ import { Header } from '../components/ui/Header';
 
 export const AppRouter = () => {
     return (
+        <>
+            <Header />
+
             <BrowserRouter>
                 <Routes>
-                    <Header />
-                        <Route path="/" element={ <VideosCarrousel /> } />
-                        <Route path="/:nombreURL" element={ <VideoScreen /> } />
-                    <Footer />
+                    <Route path="/" element={ <VideosCarrousel /> } />
+                    <Route path="/:nombreURL" element={ <VideoScreen /> } />
+                </Routes>
+            </BrowserRouter>
+            
+            <Footer />
 
 
                     {/* <Route path="/" element={ <PublicRouter /> } >
@@ -23,7 +28,6 @@ export const AppRouter = () => {
                     </Route>
 
                     <Route path="/404-page" element={ <Page404 /> } /> */}
-                </Routes>
-            </BrowserRouter>
+        </>
     )
 }

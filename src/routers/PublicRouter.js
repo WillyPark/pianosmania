@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 export const PublicRouter = () => {
     return (
-       <div className="animacionFade"> 
+       <> 
             <Header />
 
                 <div className="animacionFade">
@@ -13,6 +13,6 @@ export const PublicRouter = () => {
                 </div>
 
             <Footer />
-        </div>
+        </>
     )
 }
