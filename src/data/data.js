@@ -46,7 +46,7 @@ export const data = [
         url: "https://drive.google.com/file/d/14ZydTuVE9ir3ESULtKTKx92iXwEt2jOo/preview",
         nombre: "Tsubasa Chronicles - You are my love",
         nombreURL: "tsubasa-chronicles-you-are-my-love",
-        imagen: 71
+        imagen: 7
     },
     {
         id: 8,
