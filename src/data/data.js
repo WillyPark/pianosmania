@@ -33,5 +33,26 @@ export const data = [
         nombre: "Tchaikovsky \"June\" Barcarolle - Preview",
         nombreURL: "tchaikovsky-june-barcarolle-preview",
         imagen: 5
+    },
+    {
+        id: 6,
+        url: "https://drive.google.com/file/d/14TDNv5SaTFXC-Cv9cigRUojKwRQFQjFR/preview",
+        nombre: "Beethoven Moonlight Sonata - Preview",
+        nombreURL: "moonlight-sonata-preview",
+        imagen: 6
+    },
+    {
+        id: 7,
+        url: "https://drive.google.com/file/d/14ZydTuVE9ir3ESULtKTKx92iXwEt2jOo/preview",
+        nombre: "Tsubasa Chronicles - You are my love",
+        nombreURL: "tsubasa-chronicles-you-are-my-love",
+        imagen: 71
+    },
+    {
+        id: 8,
+        url: "https://drive.google.com/file/d/14gZokwvsrtZgVOpH_EdlyZi9Q3xfPoJJ/preview",
+        nombre: "Cumbia Remix Chopin",
+        nombreURL: "cumbia-remix-chopin",
+        imagen: 8
     }
 ];
