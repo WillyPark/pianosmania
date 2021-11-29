@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="header__menuRedes--contenedor">
                     <ul className="header__menuRedes">
                         <li>
-                            <a rel="noreferrer" href="https://www.facebook.com/luisenrique.kurosaki.5/" target="_blank">
+                            <a rel="noreferrer" href="https://www.facebook.com/" target="_blank">
                                 <i className="fab fa-facebook-square"></i>
                             </a>
                         </li>
