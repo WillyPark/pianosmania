@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://https://pianosmania.netlify.app/sitemap.xml
+Sitemap: https://pianosmania.netlify.app/sitemap.xml
